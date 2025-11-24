@@ -6,6 +6,8 @@
     font-display: swap;
 }
 
+
+
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
@@ -48,6 +50,9 @@ nav {
 .soundwaves {
     width: 75%;
     height: auto; 
+    display: block;
+    margin: 0 auto;
+    justify-self: center;
     /*margin-top: 25px;*/
     mask-image: linear-gradient(
         to right,
@@ -149,6 +154,10 @@ nav a {
     font-size: 1.3em;
     cursor: pointer;
     box-shadow: 3px 3px 8px #000;
+}
+
+.hero-button a {
+    text-decoration: none;
 }
 
 /* DEMO SECTION */ 
@@ -608,7 +617,115 @@ ABOUT PAGE
    ---------------------
 */
 
+/* =========== DEMOS PAGE =========== */
+
 .demos-page-section {
+    padding: 2rem 1rem;
+}
+
+.demos-page-section h1 {
+    text-align: center;
+    margin: 0; 
+}
+
+.demos-page-teaser {
+    max-width: 70%;
+    text-align: center;
+    margin: 0.5rem auto 3rem;
+    font-size: 1.2rem;
+}
+
+/* CATEGORY BLOCK */
+
+.demo-page-categories {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-category {
+    background: #E2BD55;
+    border: 1px solid #E2BD55;
+    border-radius: 14px;
+    padding: 1.8rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    width: 80%;
+    
+}
+
+.category-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-info img {
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.category-info h2 {
+    font-size: 1.9rem;
+    margin: 0;
+}
+
+/* Audio Player */
+.demo-category audio,
+.sample-card audio {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* ADDITIONAL SAMPLES */
+.secondary-samples {
+    margin-top: 2rem;
+}
+
+.sample-note {
+    margin-bottom: 2rem;
+    font-size: 1.3em;
+    font-style: italic;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.additional-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+}
+
+.demos-page-section .audio-section {
+    font-size: 1.3em;
+    color: #fafafa;
+    margin: 15px;
+    background: linear-gradient(to left, #96CDE1, #3C677A);
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+    padding: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.demos-page-section .audio-section h4 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+/* .demos-page-section {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -662,9 +779,9 @@ ABOUT PAGE
 .secondary-samples ul {
     list-style-type: disc;
     padding-left: 20px;
-    column-count: 2; /* Two-column "sea of samples" */
+    column-count: 2; 
     column-gap: 40px;
-}
+} */
 
 
 /* FOR DEPTH: 
